@@ -10,21 +10,33 @@ namespace Collections
     {
         static void Main(string[] args)
         {
-            int[] listOfgrades = new int[3];
+            int[] listOfGrades = new int[3];
             Console.WriteLine("Please enter grades: ");
-            for (int i = 0; i < listOfgrades.Length; i++)
+            for (int i = 0; i < listOfGrades.Length; i++)
             {
                 Console.WriteLine("Please enter next grade: ");
                 int grade = Convert.ToInt32(Console.ReadLine());
-                listOfgrades[i] = grade;
+                listOfGrades[i] = grade;
             }
             Console.WriteLine("");
-            foreach (var item in listOfgrades)
+            for (int i = 0; i < listOfGrades.Length; i++)
             {
-                Console.Write(item + ", " + item);
+                if (i==listOfGrades.Length -1)
+                {
+                    Console.Write(listOfGrades[i]);
+                }
+                else
+                {
+                    Console.Write(listOfGrades[i] + ", ");
 
+                }
             }
             Console.ReadLine();
+
+
+
+
+
         }
     }
 }
