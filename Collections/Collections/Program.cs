@@ -42,7 +42,6 @@ namespace Collections
                 else
                 {
                     Console.Write(listOfGrades[i] + ", ");
-
                 }
             }
         }
